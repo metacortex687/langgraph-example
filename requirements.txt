@@ -2,4 +2,5 @@ langgraph
 tavily-python
 langchain_community
 langchain_xai
-langgraph-cli[inmem] 
+langgraph-cli[inmem]
+python-dotenv 
