@@ -7,7 +7,7 @@ from my_agent.utils.state import AgentState
 
 # Define the config
 class GraphConfig(TypedDict):
-    model_name: Literal["anthropic", "openai"]
+    model_name: Literal["grok"]
 
 
 # Define a new graph
@@ -50,3 +50,6 @@ workflow.add_edge("action", "agent")
 # This compiles it into a LangChain Runnable,
 # meaning you can use it as you would any other runnable
 graph = workflow.compile()
+
+# Set default configuration for the graph
+graph = graph.with_config({"configurable": {"model_name": "grok"}})
