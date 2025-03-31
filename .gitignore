@@ -53,6 +53,5 @@ coverage.xml
 # LangGraph
 .langgraph_api/
 .ipynb_checkpoints
-
 .env
 .langgraph-data
